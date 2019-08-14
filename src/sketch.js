@@ -56,17 +56,17 @@ var a3 = 0;
 var a4 = 0;
 
 function preload() {
-	bg = loadImage('images/city.jpg');
-	flappy_img = loadImage('images/flappy.png');
-	heart = loadImage('images/heart.png');
-	on = loadImage('images/soundon.png');
-	off = loadImage('images/soundoff.png');
+	bg = loadImage('src/images/city.jpg');
+	flappy_img = loadImage('src/images/flappy.png');
+	heart = loadImage('src/images/heart.png');
+	on = loadImage('src/images/soundon.png');
+	off = loadImage('src/images/soundoff.png');
 
-	music = loadSound('sounds/bg.mp3');
-	hit = loadSound('sounds/lose.mp3');
-	pass = loadSound('sounds/twinkle.mp3');
+	music = loadSound('src/sounds/bg.mp3');
+	hit = loadSound('src/sounds/lose.mp3');
+	pass = loadSound('src/sounds/twinkle.mp3');
 
-	pixelFont = loadFont('Pixeled.ttf');
+	pixelFont = loadFont('src/Pixeled.ttf');
 }
 
 function setup() {
