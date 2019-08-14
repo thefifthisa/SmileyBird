@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	
+	<style>
+		body {
+			padding: 0; 
+			margin: 0;
+			font-family: 'Roboto Mono';
+			background: rgb(192, 143, 188);
+		}
+
+		h1 {
+			font-size: 60px;
+			font-style: italic;
+			text-align: center;
+			display: block;
+			margin: 50px auto 10px auto;
+			color: rgb(177, 32, 28);
+		}
+
+		h3 {
+			text-align: center;
+			display: block;
+			margin: 0px auto 40px auto;
+		}
+
+		p {
+			font-size: 18px;
+			text-align: center;
+			max-width: 75%;
+			display: block;
+			margin: 20px auto 20px auto;
+		}
+
+		a {
+			color: rgb(177, 32, 28);
+		}
+
+		img {
+			display: block;
+			margin: 10px auto 10px auto;
+			width: 45%;
+		}
+
+		b {
+			color: rgb(177, 32, 28);
+		}
+
+		hr {
+			border: 1px dashed black;
+			width: 75%;
+		}
+	</style>
+  </head>
+  <body>
+	  <h1>Final Project Update #1</h1>
+	  <p>After settling on my new idea of a smile-controlled Flappy Bird, I got to work right away with setting up the game environment. I used the Face Tracking sample code to start a video capture using the player's webcam and track the different points on their lips using the CLM tracker. I then searched for pixel art assets for Flappy, the city background, and the other icons needed while playing. Before placing them in the game, I edited some of the colors using <a href="http://pixelartmaker.com/" target="_blank">Pixel Art Maker</a> to have a cohesive style to the game.</p>
+
+	  <img src="https://i.imgur.com/J8NU3hl.png">
+
+	  <p>The game utilizes object-oriented design with classes for Flappy and Pipes. Implementing the first, I struggled with how to control Flappy using the player's smile. First, I printed the player's mouth opening, calculated using points on the CLM tracker, to the console in order to determine its minimum and maximum values. I then used the map function to translate that into a speed that gets added to Flappy's y-position and makes it move up or down accordingly. However, I found that the resulting movement was a little too slow compared to the original Flappy Bird. I realized a better approach would be to map the mouth opening to a y-position based on the height of the canvas, but it's currently a little too jittery.</p>
+
+	  <img src="https://i.imgur.com/IgFetWn.gif">
+
+	  <p>In terms of next steps, I'll tinker more with the position mapping and also get started on implementing the moving pipes that Flappy needs to go through.</p>
+
+	  <hr>
+
+	  <h1>Final Project Update #2</h1>
+	  <p>Everything's coming together! Since my last update, I implemented the Pipes class so the game is fully playable now. </p>
+
+	  <img src="https://i.imgur.com/DMz6ONX.gif">
+
+	  <p>One of the biggest challenges I faced in this part is figuring out when to add a new pipe. There was a point when my game always crashed upon starting because I was inadvertently adding so many pipes at once. I later realized the problem and added checks to only add a new pipe if Flappy either passed or hit the current one. Flappy's movement is also less jittery now after I changed the map function to a smaller range of y-positions, but I'll continue tweaking to get it just right.</p>
+
+	  <p>I also created title and end screens with animations!</p>
+
+	  <img src="https://i.imgur.com/MBC0VBi.gif">
+	  <img src="https://i.imgur.com/E3Z3nx9.gif">
+
+	  <p style="margin-bottom: 50px;"></p>
+  </body>
+</html>
