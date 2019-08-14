@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- p5.js libraries -->
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="src/libraries/p5.js"
+    ></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="src/libraries/p5.dom.min.js"
+    ></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="src/libraries/p5.sound.min.js"
+    ></script>
+
+    <!-- clmtracker libraries -->
+    <script src="src/ext_js/utils.js"></script>
+    <script src="src/ext_js/jsfeat-min.js"></script>
+    <script src="src/ext_js/frontalface.js"></script>
+    <script src="src/ext_js/jsfeat_detect.js"></script>
+    <script src="src/ext_js/numeric-1.2.6.min.js"></script>
+    <script src="src/ext_js/mosse.js"></script>
+    <script src="src/ext_js/left_eye_filter.js"></script>
+    <script src="src/ext_js/right_eye_filter.js"></script>
+    <script src="src/ext_js/nose_filter.js"></script>
+    <script src="src/models/model_pca_20_svm.js"></script>
+    <script src="src/js/clm.js"></script>
+    <script src="src/js/svmfilter_webgl.js"></script>
+    <script src="src/js/svmfilter_fft.js"></script>
+    <script src="src/js/mossefilter.js"></script>
+    <script src="src/ext_js/Stats.js"></script>
+
+    <!-- craig's API for accessing the clmtracker library via p5 -->
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="src/libraries/ck_p5_clmtracker.js"
+    ></script>
+
+    <!-- our sketch file! -->
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="src/sketch.js"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background: rgb(80, 67, 93);
+      }
+
+      p {
+        margin-top: 635px;
+        font-family: "Roboto Mono";
+        font-size: 18px;
+        text-align: center;
+        color: white;
+      }
+
+      a {
+        color: rgb(221, 160, 221);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="sketch-holder"></div>
+
+    <p>Documentation <a href="src/documentation.html">here</a>!</p>
+  </body>
+</html>
